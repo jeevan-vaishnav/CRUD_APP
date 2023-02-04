@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets//css//style.css" />
+    <title>User Management System</title>
+  </head>
+  <body>
+    <!-- <header> -->
+    <header id="header">
+      <nav>
+        <div class="container">
+          <div class="text-center">
+            <a href="" class="nav-brand text-dark">User Management System</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- </header> -->
+    <!-- <main site > -->
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <div class="filter">
+            <a href="/"> <i class="fas fa-angle-double-left"></i> All Users</a>
+          </div>
+        </div>
+
+        <div class="form-title text-center">
+          <h2 class="text-dark">New User</h2>
+          <span class="text-light"
+            >use the below form to create a new account</span
+          >
+        </div>
+
+        <!-- <form handling  -->
+        <form method="POST" id="update_user">
+          <div class="new_user">
+            <div class="form-group">
+              <label for="name" class="text-light">Name</label>
+              <input name="id" value="" type="hidden" />
+              <input placeholder="Jeevan Vaishnav" type="text" name="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="text-light">Email</label>
+              <input
+                value=""
+                placeholder="jeevan@gmail.com"
+                type="text"
+                name="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="gender" class="text-dark">Gender</label>
+              <div class="radio inline">
+                <input value="Male" id="radio-1" type="radio" name="gender" />
+                <label for="radio-1" class="radio-label">Male</label>
+              </div>
+
+              <div class="radio inline">
+                <input value="Female" id="radio-2" type="radio" name="gender" />
+                <label for="radio-2" class="radio-label">Female</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="status" class="text-dark">Status</label>
+              <div class="radio inline">
+                <input value="Active" id="radio-3" type="radio" name="status" />
+                <label for="radio-3" class="radio-label">Active</label>
+              </div>
+
+              <div class="radio inline">
+                <input
+                  value="Inactive"
+                  id="radio-4"
+                  type="radio"
+                  name="status"
+                />
+                <label for="radio-4" class="radio-label">Inactive</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button class="btn" type="submit" class="btn text-dark update">
+                Save
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- </main> -->
+  </body>
+</html>
+
+<!-- 6:51 -->
